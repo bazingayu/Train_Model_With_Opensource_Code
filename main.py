@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import json
 from tqdm import tqdm
 
-root_dir_images = "/home/hank/Desktop/Dataset/images"
+root_dir_images = "/home/hank/Desktop/Dataset/images_val"
 root_dir_bbs = "/home/hank/Desktop/Dataset/bounding_box"
 
 img_id = 1
@@ -55,6 +55,6 @@ category_list = [{"id": 0, "name": "strawberry", "supercategory": "strawberry"}]
 
 dic = {"images": img_list, "annotations": ann_list, "categories": category_list}
 b = json.dumps(dic)
-f = open("strawberry.json", "w")
+f = open("strawberry_train.json", "w")
 f.write(b)
 f.close()
