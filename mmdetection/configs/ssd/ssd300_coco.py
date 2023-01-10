@@ -21,7 +21,7 @@ train_pipeline = [
     dict(type='Resize', img_scale=(300, 300), keep_ratio=False),
     dict(type='RandomFlip', flip_ratio=0.5),
     dict(
-        type='PhotoMetricDistortion',
+        type='',
         brightness_delta=32,
         contrast_range=(0.5, 1.5),
         saturation_range=(0.5, 1.5),

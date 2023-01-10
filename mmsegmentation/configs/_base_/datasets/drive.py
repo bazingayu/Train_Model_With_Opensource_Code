@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'DRIVEDataset'
-data_root = 'data/DRIVE'
+data_root = '/home/hank/Desktop/Dataset'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 img_scale = (584, 565)
@@ -42,18 +42,18 @@ data = dict(
         dataset=dict(
             type=dataset_type,
             data_root=data_root,
-            img_dir='images/training',
-            ann_dir='annotations/training',
+            img_dir='seg/train/images',
+            ann_dir='seg/train/mask',
             pipeline=train_pipeline)),
     val=dict(
         type=dataset_type,
         data_root=data_root,
-        img_dir='images/validation',
-        ann_dir='annotations/validation',
+        img_dir='seg/val/images',
+        ann_dir='seg/val/mask',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
         data_root=data_root,
-        img_dir='images/validation',
-        ann_dir='annotations/validation',
+        img_dir='seg/val/images',
+        ann_dir='seg/val/mask',
         pipeline=test_pipeline))

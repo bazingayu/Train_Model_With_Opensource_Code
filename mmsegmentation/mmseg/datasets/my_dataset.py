@@ -9,7 +9,7 @@ class MyDataset(CustomDataset):
        'bg', 'fg'
     )
     # 这个数量与上面个数对应就好了,只是最后的预测每个类别对应的mask颜色
-    PALETTE = [[0, 0 , 0], [1, 1, 1]]
+    PALETTE = [[0, 0 , 0], [255, 255, 255]]
 
     def __init__(self, **kwargs):
         super(MyDataset, self).__init__(

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import json
 from tqdm import tqdm
 
-root_dir_images = "/home/hank/Desktop/Dataset/images_val"
+root_dir_images = "/home/hank/Desktop/Dataset/images_train"
 root_dir_bbs = "/home/hank/Desktop/Dataset/bounding_box"
 
 img_id = 1
